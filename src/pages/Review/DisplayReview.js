@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container, Row } from "react-bootstrap";
+import Rating from "react-rating";
 
 const DisplayReview = () => {
   const [reviews, setReviews] = useState();
@@ -26,7 +27,14 @@ const DisplayReview = () => {
                 <Card.Title className="text-info">{review?.name}</Card.Title>
                 <hr />
                 <Card.Text className="text-muted">{review?.comments}</Card.Text>
-                <Card.Text>Ratting: {review?.ratting}</Card.Text>
+                <Card.Text>
+                  <Rating
+                    emptySymbol="far fa-star text-warning"
+                    fullSymbol="fas fa-star text-warning"
+                    initialRating={review?.ratting}
+                    readonly
+                  ></Rating>
+                </Card.Text>
               </Card.Body>
             </Card>
           ))}
