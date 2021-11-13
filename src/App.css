@@ -1,3 +1,6 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -6,11 +9,27 @@
   height: 40vmin;
   pointer-events: none;
 }
+.title-block {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #ffd80a;
+  margin-bottom: 60 px;
+  line-height: 1;
+  text-align: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.news-letter {
+  background-image: url("./img/bb6145d9833840f3b9b23b3b1de50df1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
 }
 
 .App-header {
